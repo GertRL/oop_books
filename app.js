@@ -6,9 +6,9 @@ form.addEventListener('submit',addBook)
 
 function addBook(event) {
     // get task value from form input
-    const title = document.querySelector('#title').value
-    const author = document.querySelector('#author').value
-    const isbn = document.querySelector('#isbn').value
+    const title = ui.title.value
+    const author = ui.author.value
+    const isbn = ui.isbn.value
 
     //// create book abject with user data
     const book = new Book(title,author,isbn)
@@ -19,9 +19,9 @@ function addBook(event) {
 
     // clear form input value
 
-    document.querySelector('#title').value =''
-    document.querySelector('#author').value =''
-    document.querySelector('#isbn').value =''
+    ui.title.value
+    ui.author.value
+    ui.isbn.value
 
     event.preventDefault()
 }
