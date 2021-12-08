@@ -1,5 +1,6 @@
 // add object
 const ui = new UI()
+const ls = new LS()
 
 const form =document.querySelector('form')
 form.addEventListener('submit',addBook)
@@ -16,6 +17,8 @@ function addBook(event) {
 
     /// add book data to ui and show it
     ui.addBook(book)
+    // Save book data to LS
+    ls.addBook(book)
 
     // clear form input value
 
