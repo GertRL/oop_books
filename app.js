@@ -28,3 +28,12 @@ function addBook(event) {
 
     event.preventDefault()
 }
+
+document.addEventListener('DOMContentLoaded', getBooks)
+
+function getBooks(){
+    const books = ls.getData('books')
+    books.forEach(function (booksFromLS){
+        ui.addBook(booksFromLS)
+    })
+}
